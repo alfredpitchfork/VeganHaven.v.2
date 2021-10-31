@@ -1,0 +1,111 @@
+body {
+  background: rgba(0, 0, 0, 0);
+}
+.menu_main {
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    font-family: $HeaderFont;
+    font-size: 2.5rem;
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 10rem;
+    margin-bottom: 5%;
+  }
+  h3,
+  h4 {
+    font-family: $SubtextFont;
+  }
+  p {
+    font-family: $ParagraphFont;
+    text-align: left;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  .main_menu {
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    grid-template-areas:
+      'appetizer appetizer'
+      'entree entree'
+      'sides deserts';
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    .appetizer_section {
+      grid-area: appetizer;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $imgBackdrop12;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .entree_section {
+      grid-area: entree;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $img11;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .sides_section {
+      grid-area: sides;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $img8;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    }
+    .deserts_section {
+      grid-area: deserts;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $imgBackdrop7;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    }
+  }
+  .wine_menu {
+    border-top: double black;
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+      'sauvignon sauvignon'
+      'cabernet merlot';
+    grid-template-rows: 3.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    .sauvignon_section {
+      grid-area: sauvignon;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $imgDrink1;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .cabernet_section {
+      grid-area: cabernet;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $imgDrink2;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      background-attachment: fixed;
+    }
+    .merlot_section {
+      grid-area: merlot;
+      background: linear-gradient(to left, #f2f3f09a, #e2dad3c2), $imgDrink3;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      background-attachment: fixed;
+    }
+  }
+}

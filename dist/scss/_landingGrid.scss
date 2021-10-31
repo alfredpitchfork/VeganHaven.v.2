@@ -1,0 +1,272 @@
+@import 'config';
+
+.main_home {
+  width: 100vw;
+  overflow-x: hidden;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    'div1'
+    'div2'
+    'div3'
+    'div4'
+    'div5'
+    'div6'
+    'div7'
+    'div8';
+  grid-template-rows: 1fr repeat(7 0.5fr);
+}
+.div1 {
+  grid-area: div1;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(209, 190, 209, 0.24) 0%,
+      rgba(145, 164, 182, 0.315) 100%
+    ),
+    $img1;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  .imgdiv1 {
+    display: none;
+  }
+  .textdiv1 {
+    position: absolute;
+    font-family: $HeaderFont;
+    top: 44vh;
+    left: 40vw;
+    background: rgba(0, 0, 0, 0.062);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+    h2 {
+      font-size: 6rem;
+      color: $primaryColor;
+      mix-blend-mode: overlay;
+    }
+    h1 {
+      font-size: 6rem;
+      color: white;
+      mix-blend-mode: overlay;
+    }
+  }
+}
+.div2 {
+  width: 100vw;
+  height: 50vh;
+  display: grid;
+  grid-area: div2;
+  grid-template-areas: 'imgdiv2 textdiv2';
+  grid-template-columns: 1fr 1fr;
+  .imgdiv2 {
+    grid-area: imgdiv2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #e4ff6e2f, #f59b5238), $imgBackdrop1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .textdiv2 {
+    grid-area: textdiv2;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      padding: 0 10%;
+      font-family: $ParagraphFont;
+      font-size: 2rem;
+      text-align: center;
+      color: black;
+      overflow: hidden;
+    }
+  }
+}
+
+.div3 {
+  display: grid;
+  grid-area: div3;
+  grid-template-areas: 'textdiv3 imgdiv3';
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 50vh;
+  .imgdiv3 {
+    grid-area: imgdiv3;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #e4ff6e2f, #f59b5238), $imgBackdrop1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .textdiv3 {
+    grid-area: textdiv3;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      padding: 0 10%;
+      font-family: $ParagraphFont;
+      font-size: 1.5rem;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.877);
+      overflow: hidden;
+    }
+  }
+}
+.div4 {
+  grid-area: div4;
+
+  width: 100vw;
+  height: 50vh;
+  .imgdiv4 {
+    grid-area: imgdiv4;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #ffffff25, #4d4a4850), $img12;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .textdiv4 {
+    display: none;
+  }
+}
+.div5 {
+  display: grid;
+  grid-area: div5;
+  grid-template-areas: 'imgdiv5 textdiv5';
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 50vh;
+
+  .imgdiv5 {
+    grid-area: imgdiv5;
+    width: 100%;
+    height: 100%;
+    background: $imgBackdrop5;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .textdiv5 {
+    grid-area: textdiv5;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      padding: 0 10%;
+      font-family: $ParagraphFont;
+      font-size: 1.5rem;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.877);
+      overflow: hidden;
+    }
+  }
+}
+.div6 {
+  display: grid;
+  grid-area: div6;
+  grid-template-areas: 'textdiv6 imgdiv6';
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 50vh;
+  .imgdiv6 {
+    grid-area: imgdiv6;
+    width: 100%;
+    height: 100%;
+    background: $imgBackdrop5;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .textdiv6 {
+    grid-area: textdiv6;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      padding: 0 10%;
+      font-family: $ParagraphFont;
+      font-size: 1.5rem;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.877);
+      overflow: hidden;
+    }
+  }
+}
+.div7 {
+  display: grid;
+  grid-area: div7;
+  width: 100vw;
+  height: 50vh;
+  background: $img7;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  .imgdiv7 {
+    display: none;
+  }
+  .textdiv7 {
+    display: none;
+  }
+}
+
+.div8 {
+  display: grid;
+  grid-area: div8;
+  grid-template-areas: 'imgdiv8 imgdiv9 imgdiv10 imgdiv11';
+  grid-template-columns: repeat(4 1fr);
+  width: 100%;
+  height: 50vh;
+  .imgdiv8 {
+    grid-area: imgdiv8;
+    width: 25vw;
+    height: 100%;
+    background: $img2;
+    background-size: cover;
+    background-position: center;
+  }
+  .imgdiv9 {
+    grid-area: imgdiv9;
+    width: 25vw;
+    height: 100%;
+    background: $img3;
+    background-size: cover;
+    background-position: center;
+  }
+  .imgdiv10 {
+    grid-area: imgdiv10;
+    width: 25vw;
+    height: 100%;
+    background: $img4;
+    background-size: cover;
+    background-position: center;
+  }
+  .imgdiv11 {
+    grid-area: imgdiv11;
+    width: 25vw;
+    height: 100%;
+    background: $img5;
+    background-size: cover;
+    background-position: center;
+  }
+}
